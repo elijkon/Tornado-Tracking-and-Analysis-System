@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Tornado Database</title>
+</head>
+<body>
+    <h1>Search Tornado Records</h1>
+    <form action="/cgi-bin/ratingSearch.py" method="GET">
+        <label for="rating_code">EF Rating (e.g., EF2):</label>
+        <input type="text" id="rating_code" name="rating_code"><br><br>
+
+        <label for="state_name">State Name (e.g., Texas):</label>
+        <input type="text" id="state_name" name="state_name"><br><br>
+
+        <input type="submit" value="Search">
+    </form>
+</body>
+</html>

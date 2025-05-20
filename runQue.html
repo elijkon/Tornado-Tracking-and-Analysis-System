@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Run Sample Query</title>
+</head>
+<body>
+    <h1>Select a Sample Query</h1>
+    <form action="/cgi-bin/runQue.py" method="POST">
+        <label for="query_option">Choose a query:</label>
+        <select name="query_option" id="query_option">
+            <option value="fatalities">Tornadoes with Fatalities</option>
+            <option value="most_damage">Most Destructive Tornado</option>
+            <option value="count_by_state">Tornado Count Per State</option>
+            <option value="avg_by_rating">Average Path Length by Rating</option>
+            <option value="in_midwest">Tornadoes in the Midwest</option>
+        </select><br><br>
+        <input type="submit" value="Run Query">
+    </form>
+</body>
+</html>

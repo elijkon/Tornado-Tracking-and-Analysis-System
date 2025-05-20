@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+		<meta charset="UTF-8">
+		<meta name = "viewport" content = "width = device-width, intitial-scale=1.0">
+		<title>Insert Casulty Statistics</title>
+</head>
+<body>
+		<h1>Insert Casulty Statistics</h1>
+		<form action = "/cgi-bin/insertCasultyStats.py" method = "POST">
+				<label for="StatID">Stat ID:</label>
+				<input type="number" id="StatID" name="StatID" required><br><br>
+
+				<label for="TornadoID">Tornado ID:</label>
+				<input type="number" id="TornadoID" name="TornadoID" required><br><br>
+
+				<label for="Injuries">Injuries:</label>
+				<input type="number" id="Injuries" name="Injuries" required><br><br>
+
+				<label for="Fatalities">Fatalities:</label>
+				<input type="number" id="Fatalities" name="Fatalities" required><br><br>
+
+				<label for="PropertyDamage">Property Damage ($ millions):</label>
+				<input type="number" step="0.01" id="PropertyDamage" name="PropertyDamage" required><br><br>
+
+				<label for="CropDamage">Crop Damage ($ millions):</label>
+				<input type="number" step="0.01" id="CropDamage" name="CropDamage" required><br><br>
+
+				
+				<input type = "submit" value = "Submit">
+			</form>
+</body>
+</html>

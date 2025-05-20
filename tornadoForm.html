@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+		<meta charset="UTF-8">
+		<meta name = "viewport" content = "width = device-width, intitial-scale=1.0">
+		<title>Insert Tornado</title>
+</head>
+<body>
+		<h1>Insert Tornado</h1>
+		<form action = "/cgi-bin/insertTornado.py" method = "POST">
+				<label for="TornadoID">Tornado ID:</label>
+				<input type="number" id="TornadoID" name="TornadoID" required><br><br>
+		
+				<label for="StateID">State ID:</label>
+				<input type="number" id="StateID" name="StateID" required><br><br>
+
+				<label for="RatingID">Rating ID:</label>
+				<input type="number" id="RatingID" name="RatingID" required><br><br>
+
+				<label for="EventTypeID">Event Type ID:</label>
+				<input type="number" id="EventTypeID" name="EventTypeID" required><br><br>
+
+				<label for="StartTime">Start Time:</label>
+				<input type="datetime-local" id="StartTime" name="StartTime" required><br><br>
+
+				<label for="PathLengthMi">Path Length (mi):</label>
+				<input type="number" step="0.01" id="PathLengthMi" name="PathLengthMi" required><br><br>
+
+				
+				<input type = "submit" value = "Submit">
+			</form>
+</body>
+</html>

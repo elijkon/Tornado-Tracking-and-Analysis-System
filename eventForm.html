@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+		<meta charset="UTF-8">
+		<meta name = "viewport" content = "width = device-width, intitial-scale=1.0">
+		<title>Insert Event Types</title>
+</head>
+<body>
+		<h1>Insert Event Types</h1>
+		<form action = "/cgi-bin/insertEvent.py" method = "POST">
+				<label for="EventTypeID">Event Type ID:</label>
+				<input type="number" id="EventTypeID" name="EventTypeID" required><br><br>
+
+				<label for="Name">Event Name:</label>
+				<input type="text" id="Name" name="Name" required><br><br>
+	
+				<label for="Description">Description:</label>
+				<input type="text" id="Description" name="Description" required><br><br>
+
+				<label for="LandOrWater">Land or Water:</label>
+				<input type="text" id="LandOrWater" name="LandOrWater" required><br><br>
+
+				<label for="FrequencyRank">Frequency Rank:</label>
+				<input type="number" id="FrequencyRank" name="FrequencyRank" required><br><br>
+
+				<label for="ExampleRegion">Example Region:</label>
+				<input type="text" id="ExampleRegion" name="ExampleRegion" required><br><br>
+				
+				<input type = "submit" value = "Submit">
+			</form>
+</body>
+</html>
